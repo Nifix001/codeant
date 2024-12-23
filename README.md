@@ -19,7 +19,7 @@ CodeAnt AI is a web application designed for managing and exploring repositories
 ## Tech Stack
 
 - **Frontend**:
-  - 2[Next.js](https://nextjs.org/)
+  - [Next.js](https://nextjs.org/)
   - [React](https://reactjs.org/)
   - [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**:
@@ -32,7 +32,7 @@ CodeAnt AI is a web application designed for managing and exploring repositories
 1. Clone the repository:
 
    ```bash
-   git clone github.com/Nifix001/codeant
+   git clone https://github.com/Nifix001/codeant
    ```
 
 2. Navigate to the project directory:
