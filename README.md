@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeAnt AI Repository Dashboard
 
-## Getting Started
+CodeAnt AI is a web application designed for managing and exploring repositories efficiently. It includes features such as a sidebar for navigation, repository listing, search functionality, and more. The login page is set as the index page of the application.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Fully responsive layout for both mobile and desktop views.
+- **Sidebar Navigation**:
+  - Full width on mobile with a height of half the screen.
+  - Fixed on desktop for seamless navigation.
+- **Repository Management**:
+  - List of repositories with details such as name, type, language, size, and last update.
+  - Search functionality to filter repositories.
+- **Dynamic Actions**:
+  - Refresh button to reload repositories.
+  - Add repository button.
+- **Mobile-Friendly Header**: Collapsible sidebar controlled via a menu button.
+
+## Tech Stack
+
+- **Frontend**:
+  - 2[Next.js](https://nextjs.org/)
+  - [React](https://reactjs.org/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**:
+  - [Lucide React](https://lucide.dev/)
+- **Images**:
+  - Handled using the Next.js Image component.
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone github.com/Nifix001/codeant
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd codeant
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Pages
+
+- **Login Page (Index Page)**: The entry point of the application. Users must log in to access other features.
+- **Repositories Page**: Displays a list of repositories with detailed information.
+- **Other Pages**:
+  - All Code Review
+  - Cloud Security
+  - How to Use
+  - Settings
+
+## Folder Structure
+
+```
+.
+├── components
+│   ├── Sidebar.jsx # Sidebar component for navigation
+|   |── LeftSection.jsx # Left section of the login page
+├── data
+│   ├── repositories.js   # Repository data
+├── pages
+│   ├── app.jsx          # Login page (index page)
+│   ├── repositories.jsx   # Repositories page
+├── public
+│   ├── logo.jpg          # Application logo
+├── styles
+│   ├── globals.css       # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- To adjust the sidebar design or behavior, modify `Sidebar.jsx`.
+- To add more pages or features, update the `navLinks` array in the Sidebar component.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements
 
-## Learn More
+- Add authentication functionality to the login page.
+- Integrate a backend service for dynamic repository management.
+- Implement additional features such as repository creation and deletion.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
